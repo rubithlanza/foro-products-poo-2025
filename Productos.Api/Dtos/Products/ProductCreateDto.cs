@@ -6,7 +6,7 @@ namespace Productos.Api.Dtos.Products
     {
         [Display(Name = "Nombre")]
         [Required(ErrorMessage = "El campo {0} es requerido")]
-        [StringLength(13, MinimumLength = 3, ErrorMessage = "El campo {0} debe tener un minimo de {2} y una maximo de {1} caracteres.")]
+        [StringLength(20, MinimumLength = 3, ErrorMessage = "El campo {0} debe tener un minimo de {2} y una maximo de {1} caracteres.")]
         public string Name { get; set; }
 
         [Display(Name = "Descripcion del producto")]
